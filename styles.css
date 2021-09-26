@@ -31,7 +31,7 @@ body {
   h1 {
       text-align:center;
       font-size: 6.5rem;
-      color:rgba(169, 208, 245, 0.8);
+      color:rgba(255, 215, 0, 0.8);
       letter-spacing: 2px;
       font-family: 'Oswald', sans-serif;
       font-weight: bold;
@@ -43,7 +43,7 @@ body {
   h2 {
     text-align:center;
     font-size: 4.5rem;
-    background-image:linear-gradient(to top, rgba(142, 211, 228), rgb(127, 103, 207));
+    background-image:linear-gradient(to top, rgba(142, 211, 228), rgb(255, 215, 0));
     
   }
 
