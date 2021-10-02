@@ -14,7 +14,7 @@ html {
 
 body {
     font-size: 2.5rem;
-    background: url(images/pokemon-party.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/pokemon-party.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -81,6 +81,11 @@ img {
 
 a {
   display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items:center;
+  text-decoration: none;
+  color: black;
 }
 
 .setList p{
@@ -92,11 +97,30 @@ a {
       margin:auto 0;
   }
 
+.flexContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width:50%;
+  min-width: 300px;
+  background-image: url(images/searchIcon.png);
+  background-position: 10px 12px;
+  background-size:30px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 12px 20px 12px 50px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
 .cardList{
       display:flex;
       align-items:center;
       flex-wrap:wrap;
-      justify-content:space-evenly ;
+      justify-content:space-evenly;
   }
   
 .cardList p{
