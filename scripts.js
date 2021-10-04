@@ -16,7 +16,7 @@ app.search=function(){
 
 app.updateCardList = function(cards){
     $cardList.empty()
-    $(".cardListTitle").empty()
+    $(".cardListTitle").remove()
     $("#cardSearch").remove()
     $(".cardSection").prepend("<div class='flexContainer'><input type='text' id='cardSearch' placeholder='Search for a card...' ></div>")
     $(".cardSection").prepend("<h2 class='cardListTitle'>Card List</h2>")
