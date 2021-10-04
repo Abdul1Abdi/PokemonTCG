@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
   }
   
-  h1 {
+  h1, h2 {
       text-align:center;
       font-size: 6.5rem;
       color:rgba(255, 215, 0, 0.8);
@@ -40,12 +40,21 @@ body {
     -webkit-text-stroke-color: rgb(14, 39, 87);
   }
 
-  h2 {
-    text-align:center;
-    font-size: 4.5rem;
-    background-image:linear-gradient(to top, rgba(142, 211, 228), rgb(255, 215, 0));
-    
+  h1 {
+    font-size:6.5rem;
   }
+
+  h2 {
+    font-size: 5.5rem; 
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 .setList{
     display:flex;
@@ -55,7 +64,7 @@ body {
 }
 
 
-li {
+li, a {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -80,10 +89,7 @@ img {
 }
 
 a {
-  display:flex;
-  flex-direction:column;
-  justify-content: space-between;
-  align-items:center;
+  display:contents;
   text-decoration: none;
   color: black;
 }
@@ -104,13 +110,12 @@ a {
 }
 
 input {
-  width:50%;
+  width:60%;
   min-width: 300px;
   background-image: url(images/searchIcon.png);
   background-position: 10px 12px;
   background-size:30px;
   background-repeat: no-repeat;
-  width: 100%;
   padding: 12px 20px 12px 50px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
@@ -124,7 +129,7 @@ input {
   }
   
 .cardList p{
-    text-align:center;
+      text-align:center;
       align-self:stretch;
       font-weight:bold;
       padding: 10px 5px;
@@ -139,15 +144,14 @@ input {
   }
 
   @media (max-width: 1008px) {
-    .setList{
+    .setList, .cardList{
       flex-direction:column;
+    }
+
+    input {
+      width: 90%;
     }
   }
 
-    @media (max-width: 1008px) {
-      .setList{
-        flex-direction:column;
-      }
-    }
-
+  
   

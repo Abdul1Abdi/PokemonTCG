@@ -3,10 +3,13 @@ const app = {};
 app.search=function(){
     $("#cardSearch").on("keyup",function(){
         let value = $(this).val().toLowerCase();
-        console.log(value)
         $(".cardList li").filter(function(){
             $(this).toggle($(this).attr("class").toLowerCase().indexOf(value) > -1)
+            $(this).children().toggle($(this).attr("class").toLowerCase().indexOf(value) > -1)
+            console.log($(this).children())
+            
         })
+       
         
     })
 }
@@ -20,8 +23,8 @@ app.updateCardList = function(cards){
     cards.forEach(function(card){
         cardListHTML = `
                         <li class="${card.name}">
-                            <a href="${card.tcgplayer.url}">
-                                <img src="${card.images.small}"  alt= "image of the ${card.name} set">
+                             <a href="${card.tcgplayer.url}">
+                                <img src="${card.images.small}"  alt= "image of the ${card.name} card">
                                 <p>Price: $${card.tcgplayer.price.toFixed(2)}</p>
                              <a>
                         </li>
